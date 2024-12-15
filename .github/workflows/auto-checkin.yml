@@ -10,4 +10,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Run check-in script
         run: |
+            python auto_checkin.py
   
