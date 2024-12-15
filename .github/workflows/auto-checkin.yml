@@ -1,0 +1,13 @@
+name: Auto Check-in
+on:
+  schedule:
+    - cron: '1 0 * * *'
+jobs:
+  check-in:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run check-in script
+        run: |
+  
