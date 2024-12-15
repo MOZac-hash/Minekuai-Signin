@@ -1,7 +1,7 @@
 name: Auto Check-in
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
 jobs:
   check-in:
