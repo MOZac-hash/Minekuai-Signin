@@ -1,7 +1,7 @@
 name: Auto Check-in
 on:
   schedule:
-    - cron: '1 0 * * *'
+    - cron: '* * * * *'
 jobs:
   check-in:
     runs-on: ubuntu-latest
