@@ -2,6 +2,7 @@ name: Auto Check-in
 on:
   schedule:
     - cron: '* * * * *'
+  workflow_dispatch:
 jobs:
   check-in:
     runs-on: ubuntu-latest
