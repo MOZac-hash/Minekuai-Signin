@@ -59,11 +59,7 @@ print("Cookies:", cookies)
 # }
 #
 # # POST请求体
-# post_data = {
-#     "username": "jerrysmith01@foxmail.com",
-#     "password": "voidpro123456",
-#     "g-recaptcha-response":""
-# }
+# post_data = {}
 #
 # # 发送POST请求
 # post_response = requests.post(post_url, headers=post_headers, json=post_data, cookies=cookies)
@@ -99,6 +95,13 @@ post_data = {
 
 # 发送POST请求
 post_response = requests.post(post_url, headers=post_headers, cookies=cookies, data="2161")
+
+# 输出POST响应
+print("POST Status Code:", post_response.status_code)
+print("POST Response Body:", post_response.json())
+
+# 发送POST请求
+post_response = requests.post(post_url, headers=post_headers, cookies=cookies, data="2394")
 
 # 输出POST响应
 print("POST Status Code:", post_response.status_code)
